@@ -1,0 +1,57 @@
+/* Highlight Card Styles */
+
+.highlight {
+	height: 440px;
+	display: grid;
+	grid-template-rows: 185px 1fr;
+	background-color: var(--secondary-3);
+	border-top-left-radius: 1.25rem;
+	border-top-right-radius: 1.25rem;
+	overflow: hidden;
+}
+
+.highlight .img-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.highlight .img-container img {
+	width: 100%;
+	scale: 1.1;
+	object-fit: cover;
+}
+
+.highlight:hover .img-container img {
+	transform: scale(1.15);
+}
+
+.highlight .details {
+	padding: 1.5rem;
+	display: grid;
+}
+
+.highlight .details div {
+	margin-bottom: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.highlight .details div h2 {
+	font-size: 1.5rem;
+}
+
+.highlight .details div p {
+	color: var(--secondary-1);
+}
+
+.highlight .details button {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.highlight .details button .icon {
+	font-size: 1.25rem;
+}
