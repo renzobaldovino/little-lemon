@@ -8,7 +8,7 @@ const Navbar = () => {
 	const loc = useLocation();
 
 	return (
-		<header>
+		<header className='navbar'>
 			<nav>
 				<div className='logo'>
 					<img src={logo} alt='Little Lemon Logo' />
