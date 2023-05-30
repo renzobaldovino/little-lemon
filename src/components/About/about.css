@@ -1,0 +1,70 @@
+/* About Section Styles */
+
+.about {
+	margin-block: 2rem;
+}
+
+.about > div {
+	padding-block: 7rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5rem;
+}
+
+.about h1 {
+	color: var(--primary-2);
+}
+
+.about h2 {
+	margin-bottom: 1.5rem;
+	color: var(--primary-1);
+}
+
+.about .images {
+	display: grid;
+	place-items: center;
+}
+
+.about .img-container {
+	width: 365px;
+	height: 256.65px;
+	position: relative;
+}
+
+.about img {
+	width: 325px;
+	position: absolute;
+	border-radius: 0.5rem;
+}
+
+.about img:first-child {
+	bottom: 0;
+	left: 0;
+	opacity: 0.75;
+}
+
+.about img:last-child {
+	top: 0;
+	right: 0;
+	opacity: 1;
+}
+
+.about img:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	z-index: 2;
+}
+
+.about img:first-child:hover {
+	opacity: 1;
+}
+
+.about img:first-child:hover ~ img:last-child {
+	opacity: 0.75;
+}
+
+@media only screen and (width < 1024px) {
+	.about > div {
+		padding-inline: 2rem;
+		gap: 1rem;
+	}
+}
