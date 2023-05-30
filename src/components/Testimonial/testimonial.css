@@ -1,0 +1,60 @@
+/* Testimonial Card Styles */
+
+.testimonial {
+	position: relative;
+	display: grid;
+	gap: 0.25rem;
+}
+
+.testimonial::before {
+	content: "";
+	position: absolute;
+	top: 3rem;
+	width: 100%;
+	height: calc(100% - 3rem);
+	background-color: white;
+	border-radius: 0.5rem;
+	z-index: 1;
+}
+
+.testimonial > * {
+	position: relative;
+	z-index: 2;
+}
+
+.testimonial img {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto 1rem;
+	display: grid;
+	place-items: center;
+	background-color: white;
+	border: 5px solid white;
+	border-radius: 7rem;
+	overflow: hidden;
+}
+
+.testimonial h2 {
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.testimonial .rating {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.testimonial .rating .icon {
+	color: var(--primary-2);
+}
+
+.testimonial p {
+	padding: 1rem;
+	text-align: center;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
