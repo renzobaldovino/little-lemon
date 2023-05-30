@@ -1,0 +1,18 @@
+/* Specials Section Styles */
+
+.highlights {
+	padding: 2rem;
+}
+
+.highlights header {
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.highlights .specials-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+	gap: 2rem;
+}
