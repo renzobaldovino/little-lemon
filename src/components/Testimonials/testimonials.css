@@ -1,0 +1,28 @@
+/* Testimonials Section Styles */
+
+.testimonials {
+	margin-block: 2rem;
+	background-color: var(--primary-1);
+}
+
+.testimonials > div {
+	padding-block: 5rem;
+}
+
+.testimonials h1 {
+	margin-bottom: 2rem;
+	text-align: center;
+	color: white;
+}
+
+.testimonials .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.25rem;
+}
+
+@media only screen and (width < 1024px) {
+	.testimonials > div {
+		padding-inline: 2rem;
+	}
+}
