@@ -1,0 +1,53 @@
+/* Footer Styles */
+
+.footer {
+	background-color: var(--primary-1);
+}
+
+.footer > div {
+	padding-block: 4rem;
+	display: grid;
+	grid-template-columns: auto repeat(3, 1fr);
+	gap: 2rem;
+	justify-items: start;
+	color: white;
+}
+
+.footer img {
+	width: 7.5rem;
+}
+
+.footer h2 {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer .icon {
+	font-size: 1.25rem;
+}
+
+.footer ul {
+	display: grid;
+	gap: 0.5rem;
+}
+
+.footer .contact li {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.footer .connect ul {
+	grid-template-columns: repeat(4, auto);
+}
+
+@media only screen and (width < 1024px) {
+	.footer > div {
+		padding-inline: 2rem;
+	}
+}
