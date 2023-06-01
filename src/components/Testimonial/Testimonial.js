@@ -4,13 +4,11 @@ import { FaStar } from "react-icons/fa";
 const Testimonial = ({ name, photo, rating, review }) => {
 	return (
 		<article className='testimonial'>
-			<img src={photo} />
-			{/* <div className='img-container'>
-			</div> */}
+			<img src={photo} alt={name + "-photo"} />
 			<h2>{name}</h2>
 			<div className='rating'>
-				{[...Array(rating)].map((star) => (
-					<FaStar className='icon' />
+				{[...Array(rating)].map((star, index) => (
+					<FaStar key={index} className='icon' />
 				))}
 			</div>
 			<p>{review}</p>

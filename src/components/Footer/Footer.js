@@ -25,7 +25,7 @@ const Footer = () => {
 					<h2>CONTACT US</h2>
 					<ul>
 						{CONTACTS.map((contact) => (
-							<li key={contact.name}>
+							<li key={contact.details}>
 								<span>{contact.icon}</span>
 								<span>{contact.details}</span>
 							</li>
@@ -36,7 +36,7 @@ const Footer = () => {
 					<h2>CONNECT WITH US</h2>
 					<ul>
 						{SOCIAL_MEDIA.map((social) => (
-							<li key={social.name}>
+							<li key={social.link}>
 								<a href={social.link} target='_blank'>
 									{social.icon}
 								</a>
