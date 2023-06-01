@@ -1,0 +1,27 @@
+/* Booking Form Styles */
+
+.booking-form {
+	padding: 2rem;
+}
+
+.booking-form h1 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.booking-form form {
+	width: 100%;
+	max-width: 375px;
+	margin-inline: auto;
+	display: grid;
+	gap: 1.5rem;
+}
+
+.booking-form .input-field {
+	display: grid;
+}
+
+.booking-form .error-message {
+	color: red;
+	font-size: 0.875rem;
+}
