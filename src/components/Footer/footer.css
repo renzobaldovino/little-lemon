@@ -17,18 +17,21 @@
 	width: 7.5rem;
 }
 
+.footer h2,
+.footer li span,
+.footer li a {
+	color: white;
+}
+
 .footer h2 {
 	margin-bottom: 1rem;
 	font-size: 2rem;
 	font-weight: 400;
 }
 
-.footer a {
-	color: white;
-}
-
 .footer .icon {
 	font-size: 1.25rem;
+	fill: white;
 }
 
 .footer ul {

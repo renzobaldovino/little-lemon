@@ -49,7 +49,7 @@
 }
 
 .testimonial .rating .icon {
-	color: var(--primary-2);
+	fill: var(--primary-2);
 }
 
 .testimonial p {
