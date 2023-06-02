@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Karla", sans-serif;
+	color: var(--secondary-4);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -54,6 +55,35 @@ section > div {
 	margin-inline: auto;
 }
 
+section.full {
+	width: 100%;
+	height: calc(100vh - 80px);
+	padding: 0 2rem;
+}
+
+section.full > div {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+section.full > div > * {
+	color: var(--secondary-1);
+	fill: var(--secondary-1);
+}
+
+section.full > div .icon {
+	font-size: 5rem;
+}
+
+section.confirmed-booking > div > * {
+	color: var(--primary-1);
+	fill: var(--primary-1);
+}
+
 button {
 	font-size: 1rem;
 	font-weight: 500;
@@ -70,8 +100,39 @@ button {
 	border-radius: 0.25rem;
 }
 
-.btn:hover {
-	color: var(--primary-2);
+.btn:not(:disabled):hover {
+	color: var(--primary-1);
 	background-color: transparent;
 	border: 2px solid var(--primary-2);
+}
+
+.btn:disabled {
+	background-color: var(--secondary-3);
+	cursor: not-allowed;
+}
+
+label {
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	color: var(--primary-1);
+}
+
+input,
+select {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	background-color: transparent;
+	border: 1px solid var(--secondary-3);
+	border-radius: 0.25rem;
+}
+
+input::placeholder,
+select::placeholder {
+	color: var(--secondary-3);
+}
+
+input:focus,
+select:focus {
+	outline: 0;
+	border: 1px solid var(--primary-1);
 }
