@@ -10,7 +10,7 @@ const Footer = () => {
 	return (
 		<section className='footer'>
 			<div>
-				<img src={logo} />
+				<img src={logo} alt='Little Lemon Logo' />
 				<nav>
 					<h2>SITEMAP</h2>
 					<ul>
@@ -37,7 +37,11 @@ const Footer = () => {
 					<ul>
 						{SOCIAL_MEDIA.map((social) => (
 							<li key={social.link}>
-								<a href={social.link} target='_blank'>
+								<a
+									href={social.link}
+									target='_blank'
+									rel='noreferrer'
+								>
 									{social.icon}
 								</a>
 							</li>
